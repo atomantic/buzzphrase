@@ -1,43 +1,44 @@
 {
   "start": [
-    "integrated",
-    "total",
-    "systematized",
-    "parallel",
-    "functional",
-    "resposive",
-    "optional",
-    "synchronized",
-    "compatible",
     "balanced"
+    ,"compatible"
+    ,"functional"
+    ,"integrated"
+    ,"lobotomized"
+    ,"optional"
+    ,"parallel"
+    ,"resposive"
+    ,"synchronized"
+    ,"systematized"
+    ,"total"
   ],
   "middle": [
-    "management",
-    "organizational",
-    "monitored",
-    "reciprocal",
-    "digital",
-    "logistical",
-    "transitional",
-    "incremental",
-    "third-generation",
-    "policy"
+    "digital"
+    ,"incremental"
+    ,"logistical"
+    ,"management"
+    ,"monitored"
+    ,"organizational"
+    ,"policy"
+    ,"reciprocal"
+    ,"third-generation"
+    ,"transitional"
   ],
   "end": [
-    "options",
-    "flexibility",
-    "capability",
-    "mobility",
-    "programming",
-    "concept",
-    "time-phase",
-    "projection",
-    "hardware",
-    "contingency"
+    "capability"
+    ,"concept"
+    ,"contingency"
+    ,"flexibility"
+    ,"hardware"
+    ,"mobility"
+    ,"options"
+    ,"programming"
+    ,"projection"
+    ,"time-phase"
   ],
   "continuation":[
-    " for",
-    ", which will enable",
-    " independent of"
+    ", which will enable"
+    ," for"
+    ," independent of"
   ]
 }
