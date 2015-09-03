@@ -1,6 +1,6 @@
 {
   "name": "buzzphrase",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get a Buzzword Phrase. Because sometimes you need a \"Balanced Reciprocal Programming Concept for Parallel Management Options\" ",
   "main": "index.js",
   "bin": {
