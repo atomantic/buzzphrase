@@ -1,4 +1,9 @@
 # buzzphrase
+[![](http://img.shields.io/gratipay/antic.svg?style=flat)](https://gratipay.com/antic)
+[![](http://img.shields.io/npm/dm/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
+[![](http://img.shields.io/npm/v/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
+[![](http://img.shields.io/codeclimate/github/atomantic/buzzphrase.svg?style=flat)](https://codeclimate.com/github/atomantic/buzzphrase)
+[![](http://img.shields.io/david/atomantic/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
 
 I logged into my computer today and saw this pop into my terminal (a gift from `fortune`):
 
