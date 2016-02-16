@@ -4,7 +4,7 @@
   "description": "Get a Buzzword Phrase. Because sometimes you need a \"Balanced Reciprocal Programming Concept for Parallel Management Options\" ",
   "main": "index.js",
   "bin": {
-    "buzzphrase" : "index.js"
+    "buzzphrase": "index.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,6 @@
   },
   "homepage": "https://github.com/atomantic/buzzphrase#readme",
   "dependencies": {
-    "lodash.random": "^3.0.1"
+    "lodash.random": "^3.1.2"
   }
 }
