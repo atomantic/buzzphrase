@@ -1,14 +1,11 @@
 #!/usr/bin/env node
 'use strict';
 
-var random = require('lodash.random');
-var words = require('./data/words');
+const sample = require('lodash.sample');
+const words = require('./data/words');
 
-var getRandom = function(key) {
-  return words[key][random(0, words[key].length - 1)];
-};
 var createPhrase = function() {
-  return getRandom('start') + ' ' + getRandom('middle') + ' ' + getRandom('end');
+  return sample(words.start) + ' ' + sample(words.middle) + ' ' + sample(words.end);
 };
 
 var buzzphrase = {
@@ -18,7 +15,7 @@ var buzzphrase = {
       return phrase;
     }
     for (var i = 0; i < iterations; i++) {
-      phrase += getRandom('continuation') + ' ' + createPhrase();
+      phrase += sample(words.continuation) + ' ' + createPhrase();
     }
     return phrase;
   },
