@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-'use strict';
 
 const sample = require('lodash.sample');
 const words = require('./data/words');
