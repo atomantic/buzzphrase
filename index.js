@@ -1,26 +1,41 @@
 #!/usr/bin/env node
 
-const sample = require('lodash.sample');
-const words = require('./data/words');
+const sample = require("lodash.sample");
 
-var createPhrase = function() {
-  return sample(words.start) + ' ' + sample(words.middle) + ' ' + sample(words.end);
+// word lists
+const verbs = require("./data/verbs");
+const adjectives = require("./data/adjectives");
+const nouns = require("./data/nouns");
+const continuation = require("./data/continuation");
+
+var mostlyUnique = function(bucket, source){
+  var item = sample(source);
+  // try up to 5 times to choose a unique value that isn't already in our phrase
+  for( var i=0; i <= 15; i++ ) {
+    if(bucket.indexOf(item)!==-1){
+      item = sample(source);
+    }else{
+      break;
+    }
+  }
+  return item;
 };
 
 var buzzphrase = {
-  getPhrase: function(iterations){
-    var phrase = createPhrase();
+  getPhrase: function(iterations) {
+    var phrase = sample(verbs) + " " + sample(adjectives) + " " + sample(nouns);
     if(!iterations || --iterations < 1){
       return phrase;
     }
     for (var i = 0; i < iterations; i++) {
-      phrase += sample(words.continuation) + ' ' + createPhrase();
+      phrase += mostlyUnique(phrase, continuation) + " " +
+        mostlyUnique(phrase, verbs) + " " +
+        mostlyUnique(phrase, adjectives) + " " +
+        mostlyUnique(phrase, nouns);
     }
     return phrase;
   },
-  buzz: function(iterations){
-    console.log(buzzphrase.getPhrase(iterations));
-  }
+  buzz: (iterations) => console.log(buzzphrase.getPhrase(iterations))
 };
 module.exports = buzzphrase;
 

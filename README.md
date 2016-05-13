@@ -1,9 +1,9 @@
 # buzzphrase
-[![](http://img.shields.io/gratipay/antic.svg?style=flat)](https://gratipay.com/antic)
 [![](http://img.shields.io/npm/dm/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
 [![](http://img.shields.io/npm/v/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
 [![](http://img.shields.io/codeclimate/github/atomantic/buzzphrase.svg?style=flat)](https://codeclimate.com/github/atomantic/buzzphrase)
 [![](http://img.shields.io/david/atomantic/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
+[![](http://img.shields.io/gratipay/antic.svg?style=flat)](https://gratipay.com/antic)
 
 I logged into my computer today and saw this pop into my terminal (a gift from `fortune`):
 
@@ -34,6 +34,9 @@ one will have the remotest idea of what you're talking about," says Broughton,
 Since I like to synergize backward overflow for upward mobility (thank you 30 Rock) as much as the next person, I figured this could make a fun if not at all useful node module.
 Also, to allow for future improvements on the wordsets, I incremental-engineered it a little for responsive organizational projection.
 
+This new system splits up the word groups into verb + adjective + noun and allows combining multiple phrases with a continuation phrase.
+As of version 2.0.0, it also has logic to make each word mostly unique in the overall phrase.
+
 ## Usage
 
 ### As a Global Install
@@ -42,11 +45,13 @@ Run on the command line, you can specify the number of joining iterations `buzzp
 ```
 ⇒ npm install -g buzzphrase
 ⇒ buzzphrase
-synchronized organizational hardware
+synthesized transitional alignment
 ⇒ buzzphrase 2
-optional incremental programming, which will enable integrated transitional flexibility
+intermediated 24/7 convergence, leveraging distributed anti-fragile paradigm-shifts
 ⇒ buzzphrase 3
-total reciprocal programming independent of compatible reciprocal capability, which will enable total third-generation contingency
+enhanced incremental initiatives independent of reinvigorated extensible channels, which revolutionizes mesh didactic partnerships
+⇒ buzzphrase 15
+exploiting real-time engagement, leveraging reinvigorated parallel methodologies on behalf of mesh extensible interfaces, liberating productized asynchonous platforms, protecting against strategized multi-layered channels in preparation for recontextualized best-of-breed touchpoints, enhanced by synchronized compelling partnerships, forging expedited functional applications, diametrically opposed to synthesized cross-platform initiatives, anticipating cultivated holistic mobility, which will enable harnessed proactive options independent of engineered innovative projection, which revolutionizes incentivized custom infrastructures in contrast to streamlined responsive time-phases, which will enable optimized bleeding-edge management
 ```
 
 ### As a module
@@ -54,7 +59,7 @@ total reciprocal programming independent of compatible reciprocal capability, wh
 var buzzphrase = require('buzzphrase');
 
 // get a phrase as a building block
-console.log("this is a seriously awesome module that will " + buzzphrase.getPhrase());
+console.log("we are building " + buzzphrase.getPhrase());
 
 // log a joined series of 2 phrases to the console
 buzzphrase.buzz(2);

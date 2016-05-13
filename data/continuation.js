@@ -1,0 +1,16 @@
+module.exports = [
+  ", anticipating"
+  ,", diametrically opposed to"
+  ,", enhanced by"
+  ," for"
+  ,", forging"
+  ," in contrast to"
+  ," in preparation for"
+  ," independent of"
+  ,", leveraging"
+  ,", liberating"
+  ,", protecting against"
+  ," on behalf of"
+  ,", which will enable"
+  ,", which revolutionizes"
+];
