@@ -30,7 +30,7 @@ module.exports = [
   ,"platforms"
   ,"policies"
   ,"programming"
-  ,"projection"
+  ,"projections"
   ,"relationships"
   ,"ROI"
   ,"solutions"
