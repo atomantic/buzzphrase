@@ -23,6 +23,7 @@ module.exports = [
   ,"markets"
   ,"methodologies"
   ,"mobility"
+  ,"minimum viable product"
   ,"neural-nets"
   ,"options"
   ,"paradigm-shifts"

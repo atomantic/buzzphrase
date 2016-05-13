@@ -18,6 +18,7 @@ module.exports = [
   ,"extensible"
   ,"functional"
   ,"frictionless"
+  ,"granular"
   ,"holistic"
   ,"incremental"
   ,"innovative"
@@ -28,6 +29,7 @@ module.exports = [
   ,"optional"
   ,"organizational"
   ,"parallel"
+  ,"plug-and-play"
   ,"proactive"
   ,"quantum"
   ,"real-time"
@@ -39,4 +41,5 @@ module.exports = [
   ,"third-generation"
   ,"total"
   ,"transitional"
+  ,"ubiquitous"
 ];
