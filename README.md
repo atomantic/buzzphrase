@@ -1,3 +1,4 @@
+[![Beerpay](https://beerpay.io/atomantic/buzzphrase/badge.svg?style=flat-square)](https://beerpay.io/atomantic/buzzphrase)
 # buzzphrase
 [![](http://img.shields.io/npm/dm/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
 [![](http://img.shields.io/npm/v/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
