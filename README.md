@@ -1,10 +1,13 @@
-[![Beerpay](https://beerpay.io/atomantic/buzzphrase/badge.svg?style=flat-square)](https://beerpay.io/atomantic/buzzphrase)
 # buzzphrase
-[![](http://img.shields.io/npm/dm/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
-[![](http://img.shields.io/npm/v/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
-[![](http://img.shields.io/codeclimate/github/atomantic/buzzphrase.svg?style=flat)](https://codeclimate.com/github/atomantic/buzzphrase)
-[![](http://img.shields.io/david/atomantic/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
-[![](http://img.shields.io/gratipay/antic.svg?style=flat)](https://gratipay.com/antic)
+[![](https://img.shields.io/npm/dm/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
+[![](https://img.shields.io/npm/v/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
+[![](https://img.shields.io/david/atomantic/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
+
+[![gratipay](https://img.shields.io/gratipay/antic.svg?style=flat)](https://gratipay.com/antic)
+[![Beerpay](https://beerpay.io/atomantic/buzzphrase/badge.svg?style=flat-square)](https://beerpay.io/atomantic/buzzphrase)
+
+
+[![follow](https://img.shields.io/twitter/follow/antic.svg?style=social&label=Follow)
 
 I logged into my computer today and saw this pop into my terminal (a gift from `fortune`):
 

@@ -11,6 +11,7 @@ module.exports = [
   ,", liberating"
   ,", protecting against"
   ," on behalf of"
+  ,", which foreshadows"
   ,", which will enable"
   ,", which revolutionizes"
 ];
