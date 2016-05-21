@@ -8,6 +8,7 @@
 Since I like to synergize backward overflow for upward mobility (thank you 30 Rock) as much as the next person, I figured this could make a fun if not at all useful node module. This is also a module I use for educational purposes and the occassional private git commit message:
 
 ```bash
+# ¯\_(ツ)_/¯ don't do this to people you work with
 git commit -m "$(buzzphrase 2)"
 ```
 
