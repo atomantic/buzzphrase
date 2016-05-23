@@ -19,29 +19,29 @@ As of 2.0.0, this module splits up the word groups into verb + adjective + noun 
 ### As a Global Install
 
 Run on the command line, you can specify the number of joining iterations `buzzphrase {iterations}` or none, default 1 (`buzzphrase`)
-```
+```bash
 ⇒ npm install -g buzzphrase
 ⇒ buzzphrase
 ```
 > synthesized transitional alignment
 
-```
+```bash
 ⇒ buzzphrase 2
 ```
 > intermediated 24/7 convergence, leveraging distributed anti-fragile paradigm-shifts
 
-```
+```bash
 ⇒ buzzphrase 3
 ```
 > enhanced incremental initiatives independent of reinvigorated extensible channels, which revolutionizes mesh didactic partnerships
 
-```
+```bash
 ⇒ buzzphrase 15
 ```
 > exploiting real-time engagement, leveraging reinvigorated parallel methodologies on behalf of mesh extensible interfaces, liberating productized asynchonous platforms, protecting against strategized multi-layered channels in preparation for recontextualized best-of-breed touchpoints, enhanced by synchronized compelling partnerships, forging expedited functional applications, diametrically opposed to synthesized cross-platform initiatives, anticipating cultivated holistic mobility, which will enable harnessed proactive options independent of engineered innovative projection, which revolutionizes incentivized custom infrastructures in contrast to streamlined responsive time-phases, which will enable optimized bleeding-edge management
 
 ### As a module
-```
+```javascript
 var buzzphrase = require('buzzphrase');
 
 // get a phrase as a building block
