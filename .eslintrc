@@ -6,6 +6,5 @@
   "globals": {
   },
   "rules": {
-    "quotes": [2, "double"]
   }
 }

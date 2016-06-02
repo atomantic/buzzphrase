@@ -3,10 +3,10 @@
 const sample = require("lodash.sample");
 
 // word lists
-const verbs = require("./data/verbs");
-const adjectives = require("./data/adjectives");
-const nouns = require("./data/nouns");
-const continuation = require("./data/continuation");
+var verbs = require("./data/verbs");
+var adjectives = require("./data/adjectives");
+var nouns = require("./data/nouns");
+var continuation = require("./data/continuation");
 
 var mostlyUnique = function(bucket, source){
   var item = sample(source);
@@ -35,7 +35,9 @@ var buzzphrase = {
     }
     return phrase;
   },
-  buzz: (iterations) => console.log(buzzphrase.getPhrase(iterations))
+  buzz: function(iterations) {
+    console.log(buzzphrase.getPhrase(iterations))
+  }
 };
 module.exports = buzzphrase;
 

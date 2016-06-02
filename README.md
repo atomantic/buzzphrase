@@ -56,6 +56,19 @@ buzzphrase.buzz(2);
 - `getPhrase(iterations)`: Get any number of phrases specified by `iterations` (Number), which will be joined together as one long synergistic flow
 - `buzz(iterations)`: Log out (console) any number of phrases specified by `iterations` (Number), which will be joined together as a third-generation contingency time-phase
 
+## Testing
+```
+npm i -g mocha dockunit
+mocha # or `npm test`
+```
+
+### Testing all node.js versions
+1. install [Docker for Mac or Docker for Windows](https://beta.docker.com/)
+2. run
+```
+npm run nodeversions
+```
+
 ## Author
 
 Adam Eivy is a software architect by day and a drawing dad by night. Check out his latest project [Beetle Royale](http://beetleroyale.com) or [follow him on the interwebs](http://adameivy.com)
