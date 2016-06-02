@@ -1,4 +1,5 @@
 # buzzphrase
+[![](https://travis-ci.org/atomantic/buzzphrase.svg?branch=master)](https://travis-ci.org/atomantic/buzzphrase)
 [![](https://img.shields.io/npm/dm/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
 [![](https://img.shields.io/npm/v/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
 [![](https://img.shields.io/david/atomantic/buzzphrase.svg?style=flat)](https://www.npmjs.org/package/buzzphrase)
