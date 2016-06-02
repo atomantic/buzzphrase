@@ -1,6 +1,6 @@
 {
   "name": "buzzphrase",
-  "version": "2.0.7",
+  "version": "2.1.0",
   "description": "Get a Buzzword Phrase. Because sometimes you need enhanced didactic mobility, liberating syndicated transitional projections",
   "main": "index.js",
   "bin": {

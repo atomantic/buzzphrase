@@ -28,7 +28,7 @@ describe('buzzphrase', function() {
         assert.isAbove(phrase1wc, 6, 'double phrase is more than 6 words');
         assert.isBelow(phrase1wc, 10, 'double phrase is less than 10 words');
         assert.isAbove(phrase2wc, 9, 'triple phrase is more than 9 words');
-        assert.isBelow(phrase2wc, 16, 'triple phrase is less than 16 words');
+        assert.isBelow(phrase2wc, 18, 'triple phrase is less than 18 words');
         assert.notEqual(phrase1, phrase2, 'two generated phrases are different');
     });
 
