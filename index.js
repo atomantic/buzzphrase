@@ -3,16 +3,16 @@
 const sample = require("lodash.sample");
 
 // word lists
-var verbs = require("./data/verbs");
-var adjectives = require("./data/adjectives");
-var nouns = require("./data/nouns");
-var continuation = require("./data/continuation");
+const verbs = require("./data/verbs");
+const adjectives = require("./data/adjectives");
+const nouns = require("./data/nouns");
+const continuation = require("./data/continuation");
 
-var mostlyUnique = function(bucket, source){
+const mostlyUnique = function(phrase, source){
   var item = sample(source);
   // try up to 5 times to choose a unique value that isn't already in our phrase
   for( var i=0; i <= 15; i++ ) {
-    if(bucket.indexOf(item)!==-1){
+    if(phrase.indexOf(item)!==-1){
       item = sample(source);
     }else{
       break;
@@ -21,7 +21,7 @@ var mostlyUnique = function(bucket, source){
   return item;
 };
 
-var buzzphrase = {
+const buzzphrase = {
   getPhrase: function(iterations) {
     var phrase = sample(verbs) + " " + sample(adjectives) + " " + sample(nouns);
     if(!iterations || --iterations < 1){
