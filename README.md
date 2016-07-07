@@ -65,12 +65,12 @@ mocha # or `npm test`
 
 ### Testing all node.js versions
 1. install [Docker for Mac or Docker for Windows](https://beta.docker.com/)
-2. run
+2. run tests
 ```
 npm run nodeversions
 ```
 
-## Author
+# Author
 
 Adam Eivy is a software architect by day and a drawing dad by night. Check out his latest project [Beetle Royale](http://beetleroyale.com) or [follow him on the interwebs](http://adameivy.com)
 
@@ -79,34 +79,6 @@ Adam Eivy is a software architect by day and a drawing dad by night. Check out h
 
 ![follow](https://img.shields.io/twitter/follow/antic.svg?style=social&label=Follow)
 
-# Backstory
-I logged into my computer today and saw this pop into my terminal (a gift from `fortune`):
-
-```
-Column 1          Column 2              Column 3
-
-0. integrated     0. management         0. options
-1. total          1. organizational     1. flexibility
-2. systematized   2. monitored          2. capability
-3. parallel       3. reciprocal         3. mobility
-4. functional     4. digital            4. programming
-5. responsive     5. logistical         5. concept
-6. optional       6. transitional       6. time-phase
-7. synchronized   7. incremental        7. projection
-8. compatible     8. third-generation   8. hardware
-9. balanced       9. policy             9. contingency
-
-    The procedure is simple.  Think of any three-digit number, then select
-the corresponding buzzword from each column.  For instance, number 257 produces
-"systematized logistical projection," a phrase that can be dropped into
-virtually any report with that ring of decisive, knowledgeable authority.  "No
-one will have the remotest idea of what you're talking about," says Broughton,
-"but the important thing is that they're not about to admit it."
-        -- Philip Broughton, "How to Win at Wordsmanship"
-
-```
-
-
-## Related
+# Related
 
 If you like this module, check out [antic](https://www.npmjs.com/package/antic) for lulz!

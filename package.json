@@ -1,6 +1,6 @@
 {
   "name": "buzzphrase",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "Get a Buzzword Phrase. Because sometimes you need enhanced didactic mobility, liberating syndicated transitional projections",
   "main": "index.js",
   "bin": {
@@ -15,16 +15,35 @@
     "url": "git+https://github.com/atomantic/buzzphrase.git"
   },
   "keywords": [
+    "argot",
+    "balderdash",
     "buzzwords",
     "buzz",
     "buzzphrase",
-    "lingo",
-    "wordsmithing",
-    "words",
+    "cant",
     "corporate",
-    "language",
+    "doublespeak",
     "english",
-    "synergy"
+    "fuzzword",
+    "gibberish",
+    "jargon",
+    "language",
+    "lingo",
+    "mediaspeak",
+    "neologisms",
+    "newspeak",
+    "parlance",
+    "phrases",
+    "phraseology",
+    "policyspeak",
+    "prattle",
+    "slang",
+    "speech",
+    "synergy",
+    "twaddle",
+    "vernacular",
+    "words",
+    "wordsmithing"
   ],
   "author": "Adam Eivy",
   "engines": {

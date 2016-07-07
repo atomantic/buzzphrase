@@ -10,6 +10,7 @@ module.exports = [
   ,", leveraging"
   ,", liberating"
   ,", protecting against"
+  ,", pioneering"
   ," on behalf of"
   ,", which foreshadows"
   ,", which will enable"

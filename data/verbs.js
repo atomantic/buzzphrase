@@ -1,6 +1,7 @@
 module.exports = [
   "aggregated"
   ,"balanced"
+  ,"connected"
   ,"cultivated"
   ,"decentralized"
   ,"disrupting"
@@ -8,6 +9,7 @@ module.exports = [
   ,"empowered"
   ,"engineered"
   ,"enhanced"
+  ,"enterprise"
   ,"evolved"
   ,"expedited"
   ,"exploiting"
