@@ -30,6 +30,7 @@ module.exports = [
   ,"redefined"
   ,"reinvigorated"
   ,"repurposed"
+  ,"right-sized"
   ,"strategized"
   ,"streamlined"
   ,"synchronized"

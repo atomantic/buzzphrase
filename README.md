@@ -59,7 +59,7 @@ buzzphrase.buzz(2);
 
 ## Testing
 ```
-npm i -g mocha dockunit
+npm i -g mocha
 mocha # or `npm test`
 ```
 

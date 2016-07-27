@@ -37,6 +37,7 @@ module.exports = [
   ,"relationships"
   ,"ROI"
   ,"solutions"
+  ,"team-players"
   ,"time-phases"
   ,"touchpoints"
   ,"value-add"

@@ -16,6 +16,7 @@ module.exports = [
   ,"digital"
   ,"disintermediate"
   ,"extensible"
+  ,"extravehicular"
   ,"functional"
   ,"frictionless"
   ,"granular"

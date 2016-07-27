@@ -1,3 +1,6 @@
+# 2.1.6
+  - right-sized extravehicular team-players
+
 # 2.1.5
   - update `lodash.sample@2.1.3` -> `lodash.sample@2.1.4`
 
