@@ -1,3 +1,6 @@
+# 2.1.7
+  - update `mocha` dep
+
 # 2.1.6
   - right-sized extravehicular team-players
 
