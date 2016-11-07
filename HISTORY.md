@@ -1,3 +1,6 @@
+# 2.1.8
+  - update `mocha` dep
+
 # 2.1.7
   - update `mocha` dep
 
