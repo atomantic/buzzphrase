@@ -42,7 +42,7 @@ const buzzphrase = {
 module.exports = buzzphrase;
 
 
-if(require.main.filename === __filename){
+if((require.main || {}).filename === __filename){
   // running as a global command
   // via `npm install -g buzzphrase; buzzphrase`
   // just call it and let it all hang out:

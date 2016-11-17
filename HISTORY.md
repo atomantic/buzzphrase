@@ -1,3 +1,6 @@
+# 2.1.9
+  - fix support for stdlib
+
 # 2.1.8
   - update `mocha` dep
 
