@@ -1,5 +1,6 @@
 module.exports = [
-  ", anticipating"
+  ", allowing"
+  ,", anticipating"
   ,", diametrically opposed to"
   ,", enhanced by"
   ," for"

@@ -1,3 +1,6 @@
+# 2.1.10
+  - on-demand containerized clusters, allowing unique hyper-converged availability
+
 # 2.1.9
   - fix support for stdlib
 

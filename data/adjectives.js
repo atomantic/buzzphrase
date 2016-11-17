@@ -28,6 +28,7 @@ module.exports = [
   ,"multi-layered"
   ,"multi-tiered"
   ,"native"
+  ,"on-demand"
   ,"optional"
   ,"organizational"
   ,"parallel"
@@ -45,4 +46,5 @@ module.exports = [
   ,"total"
   ,"transitional"
   ,"ubiquitous"
+  ,"unique"
 ];
