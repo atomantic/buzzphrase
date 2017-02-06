@@ -20,6 +20,7 @@ module.exports = [
   ,"experiences"
   ,"flexibility"
   ,"hardware"
+  ,"hyperconvergence"
   ,"infrastructures"
   ,"initiatives"
   ,"interfaces"
