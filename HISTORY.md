@@ -1,3 +1,6 @@
+# 2.2.1
+  - fixed some words (codeed->coded, backed up->backed-up, start up->start-up)
+
 # 2.2.0
   - merged verbs from @earthbound19/master
 
