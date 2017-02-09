@@ -1,3 +1,6 @@
+# 2.2.3
+  - spellcheck
+
 # 2.2.2
   - freezed->frozen
 
