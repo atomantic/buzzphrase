@@ -81,7 +81,7 @@ module.exports = [
   ,"flipped"
   ,"formatted"
   ,"forwarded"
-  ,"freezed"
+  ,"frozen"
   ,"generated"
   ,"unpowered"
   ,"grouped"

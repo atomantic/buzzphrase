@@ -1,3 +1,6 @@
+# 2.2.2
+  - freezed->frozen
+
 # 2.2.1
   - fixed some words (codeed->coded, backed up->backed-up, start up->start-up)
 
