@@ -1,10 +1,10 @@
 'use strict';
 
-var assert = require('chai').assert;
-var buzzphrase = require('../');
-var exec = require('child_process').exec;
+const assert = require('chai').assert;
+const buzzphrase = require('../');
+const exec = require('child_process').exec;
 // safe words for duplication in uniqueness tests
-var repeatables = ['by','to','of','on','for','which','in'];
+const repeatables = ['by','to','of','on','for','which','in'];
 
 describe('buzzphrase', function() {
 
@@ -40,7 +40,7 @@ describe('buzzphrase', function() {
       // test conjoined phrases
       // as the set grows, tolerate a little more duplication of words
       for(var phraseLength=2; phraseLength<=14; phraseLength++){
-        var acceptable = phraseLength;
+        var acceptable = phraseLength-2;
         var duplicateCount = 0;
         var duplicateWords = [];
         for(var iterations=0; iterations<=100; iterations++){
@@ -54,8 +54,12 @@ describe('buzzphrase', function() {
             if(repeatables.indexOf(word)!==-1 || duplicateWords.indexOf(word)!==-1) {
               return word;
             }
-            var regexp = new RegExp('('+word+')', 'g');
-            var extraAppearances = phrase.match(regexp).length-1;
+            var regexp = new RegExp('( '+word+',? )', 'g');
+            var matched = phrase.match(regexp);
+            // if(matched.length > 1){
+            //   console.log('repeats:', matched.length-1, regexp, word, phrase)
+            // }
+            var extraAppearances = matched.length-1;
             if(extraAppearances) {
               // add anything over 1
               duplicateCount += extraAppearances;
@@ -65,7 +69,7 @@ describe('buzzphrase', function() {
           });
         }
         console.log('buzzphrase.getPhrase('+phraseLength+') allows', acceptable, 'duplicates in 100 iterations, found', duplicateCount);
-        assert.isBelow(duplicateCount, acceptable+1 , 'too many duplicates in ' + phraseLength + ' length phrase on "' + duplicateWords.join(',')+'"');
+        assert.isBelow(duplicateCount, acceptable+1 , 'too many duplicates in ' + phraseLength + ' length phrase on "' + duplicateWords.join(',')+'"' + 'in phrase: '+phrase);
       }
     });
   });
