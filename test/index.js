@@ -1,10 +1,10 @@
 'use strict';
 
-var assert = require('chai').assert;
-var buzzphrase = require('../');
-var exec = require('child_process').exec;
+const assert = require('chai').assert;
+const buzzphrase = require('../');
+const exec = require('child_process').exec;
 // safe words for duplication in uniqueness tests
-var repeatables = ['by','to','of','on','for','which','in'];
+const repeatables = ['by','to','of','on','for','which','in'];
 
 describe('buzzphrase', function() {
 

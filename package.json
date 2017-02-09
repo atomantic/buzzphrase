@@ -9,7 +9,7 @@
   "scripts": {
     "postversion": "git push && git push --tags",
     "test": "./node_modules/mocha/bin/mocha",
-    "nodeversions": "node ./node_modules/autochecker/cli.js 0.12 4 6"
+    "nodeversions": "node ./node_modules/autochecker/cli.js 4 6"
   },
   "repository": {
     "type": "git",
