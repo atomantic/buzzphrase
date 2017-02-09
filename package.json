@@ -1,6 +1,6 @@
 {
   "name": "buzzphrase",
-  "version": "2.1.11",
+  "version": "2.2.0",
   "description": "Get a Buzzword Phrase. Because sometimes you need enhanced didactic mobility, liberating syndicated transitional projections",
   "main": "index.js",
   "bin": {
@@ -9,7 +9,7 @@
   "scripts": {
     "postversion": "git push && git push --tags",
     "test": "./node_modules/mocha/bin/mocha",
-    "nodeversions": "node ./node_modules/autochecker/cli.js 0.12 4 5"
+    "nodeversions": "node ./node_modules/autochecker/cli.js 0.12 4 6"
   },
   "repository": {
     "type": "git",

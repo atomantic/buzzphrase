@@ -1,3 +1,6 @@
+# 2.2.0
+  - merged verbs from @earthbound19/master
+
 # 2.1.11
   - cohesive megathreaded hyperconvergence
 
