@@ -1,3 +1,6 @@
+# 2.2.4
+  - remove erroneous npm-shrinkwrap.json
+
 # 2.2.3
   - spellcheck
 
