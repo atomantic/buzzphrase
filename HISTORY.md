@@ -1,3 +1,6 @@
+# 2.3.0
+  - added `getImperative` method
+
 # 2.2.4
   - remove erroneous npm-shrinkwrap.json
 

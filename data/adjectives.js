@@ -42,6 +42,8 @@ module.exports = [
   ,"real-time"
   ,"reciprocal"
   ,"responsive"
+  ,"retroactive"
+  ,"retrospective"
   ,"scalable"
   ,"skeuomorphic"
   ,"sustainable"

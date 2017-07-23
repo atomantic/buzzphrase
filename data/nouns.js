@@ -32,6 +32,7 @@ module.exports = [
   ,"neural-nets"
   ,"options"
   ,"paradigm-shifts"
+  ,"paradigms"
   ,"partnerships"
   ,"platforms"
   ,"policies"

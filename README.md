@@ -48,12 +48,16 @@ var buzzphrase = require('buzzphrase');
 // get a phrase as a building block
 console.log("we are building " + buzzphrase.getPhrase());
 
+// imperative phrase
+console.log(buzzphrase.getImperative());
+
 // log a joined series of 2 phrases to the console
 buzzphrase.buzz(2);
 ```
 
 ### API
 
+- `getImperative(iterations)`: Get any number of imperative phrases specified by `iterations` (Number), which will be joined together as one long synergistic flow -- this is the same as getPhrase(iterations) with the addition of an imperative verb at the beginning of the phrase
 - `getPhrase(iterations)`: Get any number of phrases specified by `iterations` (Number), which will be joined together as one long synergistic flow
 - `buzz(iterations)`: Log out (console) any number of phrases specified by `iterations` (Number), which will be joined together as a third-generation contingency time-phase
 
@@ -64,7 +68,7 @@ mocha # or `npm test`
 ```
 
 ### Testing all node.js versions
-1. install [Docker for Mac or Docker for Windows](https://beta.docker.com/)
+1. install docker | [Docker for Mac](https://www.docker.com/docker-mac) | [Docker for Windows](https://www.docker.com/docker-windows)
 2. run tests
 ```
 npm run nodeversions
@@ -72,13 +76,12 @@ npm run nodeversions
 
 # Author
 
-Adam Eivy is a software architect by day and a drawing dad by night. Check out his latest project [Beetle Royale](http://beetleroyale.com) or [follow him on the interwebs](http://adameivy.com)
+Adam Eivy is a software architect by day and a drawing dad by night. [find him on the interwebs](http://adameivy.com)
 
 [![gratipay](https://img.shields.io/gratipay/antic.svg?style=flat)](https://gratipay.com/antic)
-[![Beerpay](https://beerpay.io/atomantic/buzzphrase/badge.svg?style=flat-square)](https://beerpay.io/atomantic/buzzphrase)
 
 ![follow](https://img.shields.io/twitter/follow/antic.svg?style=social&label=Follow)
 
 # Related
 
-If you like this module, check out [antic](https://www.npmjs.com/package/antic) for lulz!
+If you like this module, check out [antic](https://www.npmjs.com/package/antic) or [BuzzphraseBot](https://twitter.com/BuzzphraseBot) for lulz!
