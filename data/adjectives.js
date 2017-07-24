@@ -48,7 +48,6 @@ module.exports = [
   ,"skeuomorphic"
   ,"sustainable"
   ,"third-generation"
-  ,"total"
   ,"transitional"
   ,"ubiquitous"
   ,"unique"
