@@ -136,7 +136,6 @@ module.exports = [
   ,"overseen"
   ,"performed"
   ,"permitted"
-  ,"placed"
   ,"plugged in"
   ,"plugged-in"
   ,"polled"
