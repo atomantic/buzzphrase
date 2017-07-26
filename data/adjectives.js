@@ -44,6 +44,7 @@ module.exports = [
   ,"parallel"
   ,"plug-and-play"
   ,"policy-driven"
+  ,"polymorphic"
   ,"proactive"
   ,"quantum"
   ,"real-time"
