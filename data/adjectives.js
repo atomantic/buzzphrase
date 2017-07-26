@@ -62,4 +62,5 @@ module.exports = [
   ,"transitional"
   ,"ubiquitous"
   ,"unique"
+  ,"zero-downtime"
 ];

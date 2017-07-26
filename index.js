@@ -9,7 +9,7 @@ const nounsPlural = require("./data/nouns.plural")
 const nounsSingular = require("./data/nouns.singular")
 const verbs = require("./data/verbs")
 
-const mostlyUnique = require('lib/unique')
+const mostlyUnique = require('./lib/unique')
 
 const buzzphrase = {
   buzz: function(iterations) {
