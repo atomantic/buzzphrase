@@ -1,3 +1,15 @@
+# 2.3.1 - 2.3.4
+  - remove some verbs that aren't working well
+  - added more words:
+    - unsupervised deep convolutional networking
+    - supervised deconvolutional networks
+    - incentivized acoustic layers
+    - iterated residual normalization
+    - recontextualized adversarial pooling
+    - revolutionized stochastic singularity
+  - adding experimental finally
+    - iterated residual normalization "as code"
+
 # 2.3.0
   - added `getImperative` method
 
