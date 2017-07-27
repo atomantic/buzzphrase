@@ -56,6 +56,7 @@
   },
   "homepage": "https://github.com/atomantic/buzzphrase#readme",
   "dependencies": {
+    "lodash.merge": "4.6.0",
     "lodash.sample": "4.2.1"
   },
   "devDependencies": {

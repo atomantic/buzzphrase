@@ -1,35 +1,38 @@
 #!/usr/bin/env node
-const sample = require("lodash.sample")
+const merge = require('lodash.merge')
+const format = require('./lib/format')
 
-// word lists
-const adjectives = require("./data/adjectives")
-const continuation = require("./data/continuation")
-const imperative = require("./data/verbs.imperative")
-const nounsPlural = require("./data/nouns.plural")
-const nounsSingular = require("./data/nouns.singular")
-const verbs = require("./data/verbs")
-
-const mostlyUnique = require('./lib/unique')
+const defaultConfig = {
+  // see format method docs for format string options
+  format: '{v} {a} {N}',
+  // iterations is just a shortcut for concatenating "{c}"+format
+  // n times on your format string
+  iterations: 1
+}
 
 const buzzphrase = {
   buzz: function(iterations) {
     console.log(buzzphrase.getPhrase(iterations))
   },
+  // newer, official API
+  get: function(config){
+    let conf = merge({}, defaultConfig, config)
+    if(conf.iterations > 1){
+      for(var i=1; i<conf.iterations; i++){
+        conf.format += '{c} ' + conf.format
+      }
+    }
+    return format(conf.format)
+  },
   getImperative: function(iterations){
-    return sample(imperative) + ' ' + buzzphrase.getPhrase(iterations)
+    return buzzphrase.get({
+      format: '{i} {v} {a} {N}'
+    })
   },
   getPhrase: function(iterations) {
-    var phrase = sample(verbs) + " " + sample(adjectives) + " " + sample(nounsPlural)
-    if(!iterations || --iterations < 1){
-      return phrase
-    }
-    for (var i = 0; i < iterations; i++) {
-      phrase += mostlyUnique(phrase, continuation) + " " +
-        mostlyUnique(phrase, verbs) + " " +
-        mostlyUnique(phrase, adjectives) + " " +
-        mostlyUnique(phrase, nounsPlural)
-    }
-    return phrase
+    return buzzphrase.get({
+      iterations: iterations||1
+    })
   }
 };
 module.exports = buzzphrase
@@ -39,5 +42,5 @@ if((require.main || {}).filename === __filename){
   // running as a global command
   // via `npm install -g buzzphrase; buzzphrase`
   // just call it and let it all hang out:
-  buzzphrase.buzz(process.argv[process.argv.length - 1]);
+  buzzphrase.buzz(process.argv[process.argv.length - 1])
 }
