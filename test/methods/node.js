@@ -12,4 +12,13 @@ module.exports = function() {
       done()
     })
   })
+  it('allows format option as globally installed node app', function(done) {
+    exec('node '+__dirname+'/../../ 1 "{v}"', function(error, stdout, stderr) {
+      assert.isNull(error)
+      assert(stdout)
+      assert(stdout.split(' ').length==1)
+      assert.equal('', stderr)
+      done()
+    })
+  })
 }
