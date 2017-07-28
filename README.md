@@ -13,7 +13,7 @@ Since I like to synergize backward overflow for upward mobility (thank you 30 Ro
 git commit -m "$(buzzphrase 2)"
 ```
 
-As of 2.0.0, this module splits up the word groups into verb + adjective + noun and allows combining multiple phrases with a continuation phrase. It also now has logic to make each word mostly unique in the overall phrase. See below when called with 15 parts.
+As of 2.0.0, this module splits up the word groups into verb + adjective + noun and allows combining multiple phrases with a continuation phrase. It also now has logic to make each word mostly unique in the overall phrase. See below when called with 15 joined phrases.
 
 ## Usage
 
@@ -76,8 +76,8 @@ buzzphrase.log({iterations: 2})
   - default config:
   ```javascript
   {
-      format: '{a} {v} {N}',
-      iterations: 1
+    format: '{a} {v} {N}',
+    iterations: 1
   }
   ```
   - `format`: This is a string template that will replace the following with random words
@@ -92,36 +92,35 @@ buzzphrase.log({iterations: 2})
 - `getImperative(iterations)`
   - *DEPRECATED*: instead use
   ```javascript
-    get({
-      format:'{i} {a} {v} {N}',
-      iterations: iterations
-    })
+  buzzphrase.get({
+    format:'{i} {a} {v} {N}',
+    iterations: iterations
+  })
   ```
 
 - `getPhrase(iterations)`
   - *DEPRECATED*: instead use
   ```javascript
-    get({
-      iterations: iterations
-    })
+  buzzphrase.get({
+    iterations: iterations
+  })
   ```
 
 - `buzz(iterations)`
   - *DEPRECATED*: instead use
   ```javascript
-    get({
-      iterations: iterations
-    })
+  buzzphrase.log({
+    iterations: iterations
+  })
   ```
 - `log(config)`: same as `get(config)` but also uses console.log to spit this out into STDOUT
 
 ## Testing
 ```
-npm i -g mocha
-mocha # or `npm test`
+npm test
 ```
 
-### Testing all node.js versions
+### Testing all supported node.js versions
 1. install docker | [Docker for Mac](https://www.docker.com/docker-mac) | [Docker for Windows](https://www.docker.com/docker-windows)
 2. run tests
 ```
