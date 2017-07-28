@@ -16,7 +16,7 @@ const buzzphrase = {
   },
   // newer, official API
   get: function(config){
-    let conf = merge({}, defaultConfig, config)
+    var conf = merge({}, defaultConfig, config)
     if(conf.iterations > 1){
       for(var i=1; i<conf.iterations; i++){
         conf.format += '{c} ' + conf.format
