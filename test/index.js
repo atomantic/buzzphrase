@@ -7,30 +7,14 @@ const config = require('./config')
 
 describe('buzzphrase', function() {
 
+  describe('buzzphrase.get()', require('./methods/get'))
+
   describe('buzzphrase.getPhrase()', require('./methods/getPhrase'))
 
-  describe('buzzphrase.buzz()', function() {
-    it('returns nothing with buzz() (STDOUT)', function() {
-      var phrase = buzzphrase.buzz()
-      assert(!phrase)
-    })
-  })
+  describe('buzzphrase.getImperative()', require('./methods/getImperative'))
 
-  describe('buzzphrase.getImperative()', function() {
-    it('returns an imperative buzzphrase', function() {
-        var imperativePhrase = buzzphrase.getImperative()
-        assert(imperativePhrase)
-    })
-  })
+  describe('buzzphrase.log()', require('./methods/log'))
 
-  describe('global cli tool', function() {
-    it('runs as a global cli', function() {
-      exec('node ../', function(error, stdout, stderr) {
-        assert.isNull(error)
-        assert(stdout)
-        assert.isNull(stderr)
-      })
-    })
-  })
+  describe('global cli tool', require('./methods/node'))
 
 })

@@ -1,3 +1,13 @@
+# 2.4.0
+  - added new `get(config)` API
+  - added format option, defaults to '{a} {v} {N}'
+  - added final endings to make book title type phrases (deep convolutional stochastic pooling for dummies)
+  - increased randomness to prevent duplicates in up to 25 joined phrases (using default format)
+  - added distinction between plural nouns {N} and singular nouns {n}
+  - deprecating `getImperative` in favor of using `get({format:'{i} {a} {v} {N}'})`
+  - deprecating `getPhrase` in favor of using `get({format:'{a} {v} {N}'})``
+  - deprecating `buzz` in favor of `log`
+
 # 2.3.1 - 2.3.4
   - remove some verbs that aren't working well
   - added more words:

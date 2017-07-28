@@ -4,8 +4,8 @@ const config = require('../config')
 
 module.exports = function() {
   it('will get a unique buzzphrase', function() {
-      var phrase1 = buzzphrase.getPhrase()
-      var phrase2 = buzzphrase.getPhrase()
+      var phrase1 = buzzphrase.get()
+      var phrase2 = buzzphrase.get()
 
       assert(phrase1)
       assert(phrase2)
@@ -13,8 +13,8 @@ module.exports = function() {
       assert.notEqual(phrase1, phrase2, 'two generated phrases are different')
   })
   it('returns conjoined phrases', function() {
-      var phrase1 = buzzphrase.getPhrase(2)
-      var phrase2 = buzzphrase.getPhrase(3)
+      var phrase1 = buzzphrase.get({iterations: 2})
+      var phrase2 = buzzphrase.get({iterations: 3})
       var phrase1wc = phrase1.split(' ').length
       var phrase2wc = phrase2.split(' ').length
       // console.log('phrase1', phrase1wc, phrase1)
@@ -33,12 +33,12 @@ module.exports = function() {
   it('returns reasonably unique words in combined phrases', function() {
     // test conjoined phrases
     // as the set grows, tolerate a little more duplication of words
-    for(var phraseLength=2; phraseLength<=15; phraseLength++){
+    for(var phraseLength=2; phraseLength<=25; phraseLength++){
       var acceptable = phraseLength-20 > 0 ? phraseLength-20 : 0
       var duplicateCount = 0
       var duplicateWords = []
       for(var iterations=0; iterations<=100; iterations++){
-        var phrase = buzzphrase.getPhrase(phraseLength)
+        var phrase = buzzphrase.get({iterations: phraseLength})
         // strip commas and split words
         var words = phrase.replace(new RegExp(',', 'g'), '').split(' ')
         // pad the string phrase so we can search for " word "
@@ -62,6 +62,12 @@ module.exports = function() {
           return word
         })
       }
+      console.log(
+        'buzzphrase.get({iterations: '+phraseLength+'}) allows',
+        acceptable,
+        'duplicate in 100 iterations, found',
+        duplicateCount
+      )
       assert.isBelow(
         duplicateCount,
         acceptable+1 ,

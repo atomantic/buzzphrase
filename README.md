@@ -6,7 +6,7 @@
 
 ## Get a Buzzword Phrase
 
-Since I like to synergize backward overflow for upward mobility (thank you 30 Rock) as much as the next person, I figured this could make a fun if not at all useful node module. This is also a module I use for educational purposes and the occassional private git commit message:
+Since I like to synergize backward overflow for upward mobility (thank you 30 Rock) as much as the next person, I figured this could make a fun if not at all useful node module. This is also a module I use for educational purposes and the occasional private git commit message:
 
 ```bash
 # ¯\_(ツ)_/¯ don't do this to people you work with
@@ -19,12 +19,22 @@ As of 2.0.0, this module splits up the word groups into verb + adjective + noun 
 
 ### As a Global Install
 
-Run on the command line, you can specify the number of joining iterations `buzzphrase {iterations}` or none, default 1 (`buzzphrase`)
+Run on the command line, you can specify the number of joining iterations (default 1) and a format (default '{a} {v} {N}'):
+```bash
+  buzzphrase {iterations} {format}
+```
+
 ```bash
 ⇒ npm install -g buzzphrase
 ⇒ buzzphrase
+⇒ # same as "buzzphrase 1 '{a} {v} {N}'"
 ```
-> synthesized transitional alignment
+> synthesized transitional alignments
+
+```bash
+⇒ buzzphrase 1 '{v} {a} {n}'
+```
+> lobotomized bleeding-edge community
 
 ```bash
 ⇒ buzzphrase 2
@@ -39,27 +49,71 @@ Run on the command line, you can specify the number of joining iterations `buzzp
 ```bash
 ⇒ buzzphrase 15
 ```
-> exploiting real-time engagement, leveraging reinvigorated parallel methodologies on behalf of mesh extensible interfaces, liberating productized asynchonous platforms, protecting against strategized multi-layered channels in preparation for recontextualized best-of-breed touchpoints, enhanced by synchronized compelling partnerships, forging expedited functional applications, diametrically opposed to synthesized cross-platform initiatives, anticipating cultivated holistic mobility, which will enable harnessed proactive options independent of engineered innovative projection, which revolutionizes incentivized custom infrastructures in contrast to streamlined responsive time-phases, which will enable optimized bleeding-edge management
+> concealed compatible paradigm-shifts, in contrast to emitted unique convergence, in preparation for serialized innovative abstractions, which revolutionizes e-enabled acoustic singularity, anticipating filtered didactic policies, independent of printed-out best-of-breed hardware, liberating leveraged reciprocal management, enhanced by branded digital pooling on behalf of virtualized zero-downtime #DevOps, which foreshadows upheld extravehicular normalization for facilitated polymorphic markets, which will enable printed multilayered communities, protecting against scanned organizational clusters, forging offloaded 24/7 virtualization, pioneering clicked asynchronous partnerships
 
 ### As a module
 ```javascript
-var buzzphrase = require('buzzphrase');
+const buzzphrase = require('buzzphrase')
 
 // get a phrase as a building block
-console.log("we are building " + buzzphrase.getPhrase());
+console.log("we are building " + buzzphrase.get())
+// -> we are building marshalled retroactive applications
 
-// imperative phrase
-console.log(buzzphrase.getImperative());
+// custom phrase
+console.log(buzzphrase.get({
+  format: '{i} {a} {n} {f}'
+}))
+// -> embrace digital #DevOps for dummies
 
 // log a joined series of 2 phrases to the console
-buzzphrase.buzz(2);
+buzzphrase.log({iterations: 2})
+// -> initialized cognitive paradigm-shifts, in preparation for iterated ubiquitous architectures
 ```
 
 ### API
 
-- `getImperative(iterations)`: Get any number of imperative phrases specified by `iterations` (Number), which will be joined together as one long synergistic flow -- this is the same as getPhrase(iterations) with the addition of an imperative verb at the beginning of the phrase
-- `getPhrase(iterations)`: Get any number of phrases specified by `iterations` (Number), which will be joined together as one long synergistic flow
-- `buzz(iterations)`: Log out (console) any number of phrases specified by `iterations` (Number), which will be joined together as a third-generation contingency time-phase
+- `get(config)`: Get a phrase, with config options
+  - default config:
+  ```javascript
+  {
+      format: '{a} {v} {N}',
+      iterations: 1
+  }
+  ```
+  - `format`: This is a string template that will replace the following with random words
+    - `{a}` adjective
+    - `{c}` continuation
+    - `{f}` final (e.g. "for dummies")
+    - `{i}` imperative verb
+    - `{N}` plural noun
+    - `{n}` singular noun
+    - `{v}` verb
+  - `iterations`: specify how many times the format should be joined together with continuations ('{c}'). For example, specifying `get({iterations: 2})` will conjoin the default format into `{a} {v} {N} {c} {a} {v} {N}`
+- `getImperative(iterations)`
+  - *DEPRECATED*: instead use
+  ```javascript
+    get({
+      format:'{i} {a} {v} {N}',
+      iterations: iterations
+    })
+  ```
+
+- `getPhrase(iterations)`
+  - *DEPRECATED*: instead use
+  ```javascript
+    get({
+      iterations: iterations
+    })
+  ```
+
+- `buzz(iterations)`
+  - *DEPRECATED*: instead use
+  ```javascript
+    get({
+      iterations: iterations
+    })
+  ```
+- `log(config)`: same as `get(config)` but also uses console.log to spit this out into STDOUT
 
 ## Testing
 ```

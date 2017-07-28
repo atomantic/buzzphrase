@@ -4,7 +4,7 @@ module.exports = [
   ,"adversarial"
   ,"all-purpose"
   ,"antifragile"
-  ,"asynchonous"
+  ,"asynchronous"
   ,"B2B"
   ,"behavioral"
   ,"best-of-breed"
