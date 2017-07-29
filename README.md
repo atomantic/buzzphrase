@@ -87,7 +87,8 @@ buzzphrase.log({iterations: 2})
     - `{i}` imperative verb
     - `{N}` plural noun
     - `{n}` singular noun
-    - `{v}` verb
+    - `{v}` past-tense verb (e.g. initialized)
+    - `{V}` present participle verb (e.g. clustering)
   - `iterations`: specify how many times the format should be joined together with continuations ('{c}'). For example, specifying `get({iterations: 2})` will conjoin the default format into `{a} {v} {N} {c} {a} {v} {N}`
 - `getImperative(iterations)`
   - *DEPRECATED*: instead use

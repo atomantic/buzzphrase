@@ -1,3 +1,7 @@
+# 2.5.0
+  - present participle verbs with "{V}"
+    - e.g. ```node . 1 '{V} {a} {N}' => omitting deep convolutional mobility```
+
 # 2.4.1
   - adaptive differentiated matrix as a service
   - configurable algorithms

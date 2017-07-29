@@ -46,6 +46,7 @@ module.exports = [
   ,"multilayered"
   ,"multitiered"
   ,"native"
+  ,"non-volatile"
   ,"on-demand"
   ,"optional"
   ,"organizational"
@@ -72,6 +73,7 @@ module.exports = [
   ,"transitional"
   ,"ubiquitous"
   ,"unique"
+  ,"upgradable"
   ,"variable"
   ,"zero-downtime"
 ];
