@@ -20,7 +20,6 @@ module.exports = [
   ,"contingency"
   ,"convergence"
   ,"deliverable"
-  ,"DevOps"
   ,"empowerment"
   ,"engagement"
   ,"enhancement"

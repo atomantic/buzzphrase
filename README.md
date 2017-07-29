@@ -73,9 +73,15 @@ buzzphrase.log({iterations: 2})
 ### Format Recommendations
 #### '{a} {v} {N}' - default
 ```
-deep convolutional containerized singularity
-logistical backed-up hardware
-configurable inserted bandwidth
+retrospective digitized relationships
+adaptive accelerated markets
+shallow merged markets
+```
+#### '{a} {v} {n}'
+```
+unique routed projection
+sustainable filed touchpoint
+quantum initialized programming
 ```
 #### '{V} {a} {n} {f}'
 ```
