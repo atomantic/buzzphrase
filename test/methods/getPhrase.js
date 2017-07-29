@@ -3,7 +3,7 @@ const buzzphrase = require('../../')
 const config = require('../config')
 
 module.exports = function() {
-  it('will get a unique buzzphrase', function() {
+  it('will get a unique buzzphrase', function(done) {
       var phrase1 = buzzphrase.getPhrase()
       var phrase2 = buzzphrase.getPhrase()
 
@@ -11,8 +11,9 @@ module.exports = function() {
       assert(phrase2)
       assert.isAbove(phrase1.split(' ').length, 2, 'single phrase is more than 2 words')
       assert.notEqual(phrase1, phrase2, 'two generated phrases are different')
+      done()
   })
-  it('returns conjoined phrases', function() {
+  it('returns conjoined phrases', function(done) {
       var phrase1 = buzzphrase.getPhrase(2)
       var phrase2 = buzzphrase.getPhrase(3)
       var phrase1wc = phrase1.split(' ').length
@@ -27,10 +28,12 @@ module.exports = function() {
       assert.isAbove(phrase2wc, 9, 'triple phrase is more than 9 words')
       assert.isBelow(phrase2wc, 21, 'triple phrase is less than 21 words')
       assert.notEqual(phrase1, phrase2, 'two generated phrases are different')
+      done()
   })
 
 
-  it('returns reasonably unique words in combined phrases', function() {
+  it('returns reasonably unique words in combined phrases', function(done) {
+    this.timeout(3000)
     // test conjoined phrases
     // as the set grows, tolerate a little more duplication of words
     for(var phraseLength=2; phraseLength<=15; phraseLength++){
@@ -65,7 +68,9 @@ module.exports = function() {
       assert.isBelow(
         duplicateCount,
         acceptable+1 ,
-        'too many duplicates in ' + phraseLength + ' length phrase on "' + duplicateWords.join(',')+'"' + 'in phrase: '+phrase)
+        'too many duplicates in ' + phraseLength + ' length phrase on "' + duplicateWords.join(',')+'"' + 'in phrase: '+phrase
+      )
     }
+    done()
   })
 }
