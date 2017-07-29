@@ -41,6 +41,7 @@ module.exports = [
   ,"delivered"
   ,"deserialized"
   ,"designed"
+  ,"differentiated"
   ,"digitized"
   ,"disabled"
   ,"disbursed"
@@ -151,6 +152,7 @@ module.exports = [
   ,"re-purposed"
   ,"re-routed"
   ,"read"
+  ,'realigned'
   ,"received"
   ,"recontextualized"
   ,"recorded"

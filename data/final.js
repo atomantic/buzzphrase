@@ -1,6 +1,7 @@
 module.exports = [
   '.COM'
   ,'2.0'
+  ,'as a service'
   ,'as code'
   ,'at large'
   ,'at scale'

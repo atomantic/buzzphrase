@@ -1,3 +1,19 @@
+# 2.4.1
+  - adaptive differentiated matrix as a service
+  - configurable algorithms
+  - ergonomic analytics
+  - heuristic blockchain
+  - hyperlocal empowerment
+  - immersive parallelism
+  - intuitive realigned collaboration
+  - modular groupware
+  - seamless artificial intelligence
+  - tangible alliance
+  - variable superstructures
+
+# 2.4.1
+  - just cleaning up docs
+
 # 2.4.0
   - added new `get(config)` API
   - added format option, defaults to '{a} {v} {N}'
