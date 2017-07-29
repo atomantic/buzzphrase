@@ -12,29 +12,30 @@ module.exports = function() {
       assert.isAbove(phrase1.split(' ').length, 2, 'single phrase is more than 2 words')
       assert.notEqual(phrase1, phrase2, 'two generated phrases are different')
   })
-  it('returns conjoined phrases', function() {
-      var phrase1 = buzzphrase.get({iterations: 2})
-      var phrase2 = buzzphrase.get({iterations: 3})
-      var phrase1wc = phrase1.split(' ').length
-      var phrase2wc = phrase2.split(' ').length
-      // console.log('phrase1', phrase1wc, phrase1)
-      // console.log('phrase2', phrase2wc, phrase2)
-
-      assert(phrase1)
-      assert(phrase2)
-      assert.isAbove(phrase1wc, 6, 'double phrase is more than 6 words')
-      assert.isBelow(phrase1wc, 10, 'double phrase is less than 10 words')
-      assert.isAbove(phrase2wc, 9, 'triple phrase is more than 9 words')
-      assert.isBelow(phrase2wc, 21, 'triple phrase is less than 21 words')
-      assert.notEqual(phrase1, phrase2, 'two generated phrases are different')
+  it('returns conjoined phrases (20x test)', function() {
+      for(var i=0; i<=20; i++){
+        var phrase1 = buzzphrase.get({iterations: 2})
+        var phrase2 = buzzphrase.get({iterations: 3})
+        var phrase1wc = phrase1.split(' ').length
+        var phrase2wc = phrase2.split(' ').length
+        // console.log('phrase1', phrase1wc, phrase1)
+        // console.log('phrase2', phrase2wc, phrase2)
+        assert(phrase1)
+        assert(phrase2)
+        assert.isAbove(phrase1wc, 6, 'double phrase is more than 6 words')
+        assert.isBelow(phrase1wc, 11, 'double phrase is less than 11 words')
+        assert.isAbove(phrase2wc, 9, 'triple phrase is more than 9 words')
+        assert.isBelow(phrase2wc, 21, 'triple phrase is less than 21 words')
+        assert.notEqual(phrase1, phrase2, 'two generated phrases are different')
+    }
   })
 
 
-  it('returns reasonably unique words in combined phrases', function() {
+  it('returns reasonably unique words in combined phrases (2500x test)', function() {
     // test conjoined phrases
     // as the set grows, tolerate a little more duplication of words
     for(var phraseLength=2; phraseLength<=25; phraseLength++){
-      var acceptable = phraseLength-15 > 0 ? phraseLength-15 : 0
+      var acceptable = phraseLength-14 > 0 ? phraseLength-14 : 0
       var duplicateCount = 0
       var duplicateWords = []
       for(var iterations=0; iterations<=100; iterations++){
@@ -62,12 +63,12 @@ module.exports = function() {
           return word
         })
       }
-      console.log(
-        'buzzphrase.get({iterations: '+phraseLength+'}) allows',
-        acceptable,
-        'duplicate in 100 iterations, found',
-        duplicateCount
-      )
+      // console.log(
+      //   'buzzphrase.get({iterations: '+phraseLength+'}) allows',
+      //   acceptable,
+      //   'duplicate in 100 iterations, found',
+      //   duplicateCount
+      // )
       assert.isBelow(
         duplicateCount,
         acceptable+1 ,

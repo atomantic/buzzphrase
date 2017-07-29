@@ -34,7 +34,7 @@ module.exports = function() {
     // test conjoined phrases
     // as the set grows, tolerate a little more duplication of words
     for(var phraseLength=2; phraseLength<=15; phraseLength++){
-      var acceptable = 0
+      var acceptable = phraseLength-14 > 0 ? phraseLength-14 : 0
       var duplicateCount = 0
       var duplicateWords = []
       for(var iterations=0; iterations<=100; iterations++){
