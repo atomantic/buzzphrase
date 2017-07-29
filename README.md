@@ -70,6 +70,26 @@ buzzphrase.log({iterations: 2})
 // -> initialized cognitive paradigm-shifts, in preparation for iterated ubiquitous architectures
 ```
 
+### Format Recommendations
+#### '{a} {v} {N}' - default
+```
+deep convolutional containerized singularity
+logistical backed-up hardware
+configurable inserted bandwidth
+```
+#### '{V} {a} {n} {f}'
+```
+incentivizing B2B value-add as code
+popping-up frictionless partnership at scale
+evolving third-generation projection for people
+```
+### '{i} {v} {a} {N}'
+```
+deliver merged immersive channels
+syndicate engineered all-purpose interfaces
+grow architected adversarial mobility
+```
+
 ### API
 
 - `get(config)`: Get a phrase, with config options
