@@ -48,8 +48,10 @@ if((require.main || {}).filename === __filename){
   // just call it and let it all hang out:
   var lastArg = process.argv[process.argv.length - 1]
   var formatSpecified = lastArg.indexOf('{')!==-1
+  var numberArg = formatSpecified ? process.argv[process.argv.length - 2] : lastArg
+  var iterations = isNaN(Number(numberArg)) ? defaultConfig.iterations : numberArg
   buzzphrase.log({
     format: formatSpecified ? lastArg : defaultConfig.format,
-    iterations: formatSpecified ? process.argv[process.argv.length - 2] : defaultConfig.iterations
+    iterations: iterations
   })
 }
