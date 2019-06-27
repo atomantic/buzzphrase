@@ -17,8 +17,7 @@ Prerequisites:
 
 In particular, this community seeks the following types of contributions:
 
-- **Test Data**: `./test/data/webview.js` and `./test/data/not-webview.js` could use more data!
-- **Rules**: The regex rules for testing might grow out of date
+- **Buzzwords**: hot new buzzwords that make interesting phrases
 
 # Conduct
 
