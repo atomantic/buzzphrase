@@ -1,3 +1,9 @@
+# 2.5.4
+  - no more module dependencies (`lodash.sample`, `lodash.merge`)
+
+# 2.5.1
+  - `non-linear regressive`
+
 # 2.5.0
   - present participle verbs with "{V}"
     - e.g. ```node . 1 '{V} {a} {N}' => omitting deep convolutional mobility```

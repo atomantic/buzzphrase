@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-const merge = require('lodash.merge')
 const format = require('./lib/format')
 
 const defaultConfig = {
@@ -16,7 +15,7 @@ const buzzphrase = {
   },
   // newer, official API
   get: function(config){
-    var conf = merge({}, defaultConfig, config)
+    var conf = Object.assign({}, defaultConfig, config)
     var formatString = conf.format
     if(conf.iterations > 1){
       for(var i=1; i<conf.iterations; i++){
