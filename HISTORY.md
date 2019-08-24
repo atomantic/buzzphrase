@@ -1,4 +1,4 @@
-# 2.5.4
+# 2.5.5
   - no more module dependencies (`lodash.sample`, `lodash.merge`)
 
 # 2.5.1
