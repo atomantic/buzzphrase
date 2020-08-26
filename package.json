@@ -59,6 +59,6 @@
   "devDependencies": {
     "autochecker": "https://registry.npmjs.org/autochecker/-/autochecker-0.9.2.tgz",
     "chai": "4.2.0",
-    "mocha": "6.2.0"
+    "mocha": "8.1.2"
   }
 }
