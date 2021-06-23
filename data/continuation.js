@@ -1,20 +1,20 @@
 module.exports = [
-  ", allowing"
-  ,", anticipating"
-  ,", diametrically opposed to"
-  ,", enhanced by"
-  ," for"
-  ,", forging"
-  ,", in contrast to"
-  ,", in preparation for"
-  ,", independent of"
-  ,", leveraging"
-  ,", liberating"
-  ,", protecting against"
-  ,", providing"
-  ,", pioneering"
-  ," on behalf of"
-  ,", which foreshadows"
-  ,", which will enable"
-  ,", which revolutionizes"
+  ", allowing",
+  ", anticipating",
+  ", diametrically opposed to",
+  ", enhanced by",
+  " for",
+  ", forging",
+  ", in contrast to",
+  ", in preparation for",
+  ", independent of",
+  ", leveraging",
+  ", liberating",
+  ", protecting against",
+  ", providing",
+  ", pioneering",
+  " on behalf of",
+  ", which foreshadows",
+  ", which will enable",
+  ", which revolutionizes",
 ];
