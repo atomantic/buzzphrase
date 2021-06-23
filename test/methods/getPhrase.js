@@ -36,7 +36,6 @@ module.exports = function () {
   });
 
   it("returns reasonably unique words in combined phrases", function (done) {
-    this.timeout(5000);
     // test conjoined phrases
     // as the set grows, tolerate a little more duplication of words
     for (let phraseLength = 2; phraseLength <= 15; phraseLength++) {

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "publish": "git push && git push --tags && npm publish",
-    "test": "./node_modules/mocha/bin/mocha",
+    "test": "./node_modules/mocha/bin/mocha -t 5000",
     "nodeversions": "node ./node_modules/autochecker/cli.js 14 16"
   },
   "repository": {

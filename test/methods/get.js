@@ -4,8 +4,8 @@ const config = require("../config");
 
 module.exports = function () {
   it("will get a unique buzzphrase", function (done) {
-    var phrase1 = buzzphrase.get();
-    var phrase2 = buzzphrase.get();
+    const phrase1 = buzzphrase.get();
+    const phrase2 = buzzphrase.get();
 
     assert(phrase1);
     assert(phrase2);
@@ -18,11 +18,11 @@ module.exports = function () {
     done();
   });
   it("returns conjoined phrases (20x test)", function (done) {
-    for (var i = 0; i <= 20; i++) {
-      var phrase1 = buzzphrase.get({ iterations: 2 });
-      var phrase2 = buzzphrase.get({ iterations: 3 });
-      var phrase1wc = phrase1.split(" ").length;
-      var phrase2wc = phrase2.split(" ").length;
+    for (let i = 0; i <= 20; i++) {
+      let phrase1 = buzzphrase.get({ iterations: 2 });
+      let phrase2 = buzzphrase.get({ iterations: 3 });
+      let phrase1wc = phrase1.split(" ").length;
+      let phrase2wc = phrase2.split(" ").length;
       // console.log('phrase1', phrase1wc, phrase1)
       // console.log('phrase2', phrase2wc, phrase2)
       assert(phrase1);
@@ -37,17 +37,18 @@ module.exports = function () {
   });
 
   it("returns reasonably unique words in combined phrases (2500x test)", function (done) {
-    this.timeout(3000);
+    this.timeout(5000);
     // test conjoined phrases
     // as the set grows, tolerate a little more duplication of words
-    for (var phraseLength = 2; phraseLength <= 25; phraseLength++) {
-      var acceptable = phraseLength - 14 > 0 ? phraseLength - 14 : 0;
-      var duplicateCount = 0;
-      var duplicateWords = [];
-      for (var iterations = 0; iterations <= 100; iterations++) {
-        var phrase = buzzphrase.get({ iterations: phraseLength });
+    for (let phraseLength = 2; phraseLength <= 25; phraseLength++) {
+      let acceptable = phraseLength - 14 > 0 ? phraseLength - 14 : 0;
+      let duplicateCount = 0;
+      let duplicateWords = [];
+      let phrase;
+      for (let iterations = 0; iterations <= 100; iterations++) {
+        phrase = buzzphrase.get({ iterations: phraseLength });
         // strip commas and split words
-        var words = phrase.replace(new RegExp(",", "g"), "").split(" ");
+        let words = phrase.replace(new RegExp(",", "g"), "").split(" ");
         // pad the string phrase so we can search for " word "
         phrase = " " + phrase + " ";
         words.map(function (word) {
@@ -58,12 +59,12 @@ module.exports = function () {
           ) {
             return word;
           }
-          var regexp = new RegExp("( " + word + ",? )", "g");
-          var matched = phrase.match(regexp);
+          let regexp = new RegExp("( " + word + ",? )", "g");
+          let matched = phrase.match(regexp);
           // if(matched.length > 1){
           //   console.log('repeats:', matched.length-1, regexp, word, phrase)
           // }
-          var extraAppearances = matched.length - 1;
+          let extraAppearances = matched.length - 1;
           if (extraAppearances) {
             // add anything over 1
             duplicateCount += extraAppearances;

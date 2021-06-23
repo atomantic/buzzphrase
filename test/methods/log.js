@@ -1,6 +1,4 @@
 const assert = require("chai").assert;
-const buzzphrase = require("../../");
-const config = require("../config");
 const exec = require("child_process").exec;
 
 module.exports = function () {
