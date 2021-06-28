@@ -34,6 +34,7 @@ module.exports = [
   "frictionless",
   "generative",
   "granular",
+  "green-field",
   "heuristic",
   "high-CPM",
   "holistic",

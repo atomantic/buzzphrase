@@ -53,6 +53,7 @@ module.exports = [
   "ROI",
   "singularity",
   "solutions",
+  "storytelling",
   "subspace",
   "superstructures",
   "systems",

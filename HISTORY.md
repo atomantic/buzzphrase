@@ -1,3 +1,7 @@
+# 3.0.1
+
+-   amplify greenfield storytelling
+
 # 3.0.0
 
 -   moving to node 14 as baseline

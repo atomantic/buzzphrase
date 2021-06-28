@@ -3,6 +3,7 @@ module.exports = [
   "admitting",
   "agglomerating",
   "aggregating",
+  "amplifying",
   "architecting",
   "arranging",
   "backing",

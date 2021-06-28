@@ -3,6 +3,7 @@ module.exports = [
   "advance",
   "agglomerate",
   "aggregate",
+  "amplify",
   "architect",
   "arrange",
   "balance",
