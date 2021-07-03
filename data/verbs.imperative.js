@@ -54,6 +54,7 @@ module.exports = [
   "guarantee",
   "hack",
   "hack into",
+  "harmonize",
   "harness",
   "hybridize",
   "hyper-converge",

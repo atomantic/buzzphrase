@@ -201,7 +201,6 @@ module.exports = [
   "starting",
   "starting-up",
   "storing",
-  "strategizing",
   "streaming",
   "streamlining",
   "submitting",

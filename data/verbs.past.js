@@ -202,7 +202,6 @@ module.exports = [
   "startup",
   "start-up",
   "stored",
-  "strategized",
   "streamed",
   "streamlined",
   "submitted",

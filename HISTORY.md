@@ -1,3 +1,8 @@
+# 3.0.3
+
+-   harmonize cross-pillar, human-centric, end-of-life, mission-critical strategies
+-   enact decentralized scalable continuous-improvement
+
 # 3.0.2
 
 -   amplify greenfield storytelling
