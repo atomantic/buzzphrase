@@ -1,3 +1,7 @@
+# 3.1.0
+
+-   split cli (bin) and module (main) into two entrypoints so webpack loaders don't have to write a custom loader or use a shebang loader module :)
+
 # 3.0.3
 
 -   harmonize cross-pillar, human-centric, end-of-life, mission-critical strategies

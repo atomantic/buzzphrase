@@ -1,10 +1,10 @@
 {
   "name": "buzzphrase",
-  "version": "3.0.3",
+  "version": "3.1.0",
   "description": "Get a Buzzword Phrase. Because sometimes you need enhanced didactic mobility, liberating syndicated transitional projections",
   "main": "index.js",
   "bin": {
-    "buzzphrase": "index.js"
+    "buzzphrase": "bin.js"
   },
   "scripts": {
     "publish": "git push && git push --tags && npm publish",

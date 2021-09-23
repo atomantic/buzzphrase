@@ -1,15 +1,9 @@
-#!/usr/bin/env node
 const format = require("./lib/format");
 
-const defaultConfig = {
-  // see format method docs for format string options
-  format: "{v} {a} {N}",
-  // iterations is just a shortcut for concatenating "{c}"+format
-  // n times on your format string
-  iterations: 1,
-};
+const defaultConfig = require("./config");
 
 const buzzphrase = {
+  // deprecated
   buzz: function (iterations) {
     console.log(buzzphrase.getPhrase(iterations));
   },
@@ -39,21 +33,3 @@ const buzzphrase = {
   },
 };
 module.exports = buzzphrase;
-
-if ((require.main || {}).filename === __filename) {
-  // running as a global command
-  // via `npm install -g buzzphrase; buzzphrase`
-  // or `buzzphrase 2` (for a joining of 2 phrases)
-  const lastArg = process.argv[process.argv.length - 1];
-  const formatSpecified = lastArg.indexOf("{") !== -1;
-  const numberArg = formatSpecified
-    ? process.argv[process.argv.length - 2]
-    : lastArg;
-  const iterations = isNaN(Number(numberArg))
-    ? defaultConfig.iterations
-    : numberArg;
-  buzzphrase.log({
-    format: formatSpecified ? lastArg : defaultConfig.format,
-    iterations: iterations,
-  });
-}
