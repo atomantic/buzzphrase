@@ -69,7 +69,9 @@ The format method is also useful for testing new word additions with random coun
 ### As a module
 
 ```javascript
-const buzzphrase = require("buzzphrase");
+import buzzphrase from "buzzphrase";
+// OR
+//const buzzphrase = require("buzzphrase");
 
 // get a phrase as a building block
 console.log("we are building " + buzzphrase.get());

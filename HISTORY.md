@@ -1,3 +1,7 @@
+# 3.1.1
+
+-   Thanks to the Polkadot whitepaper: `validate applied heterogenous multi-chain incentivisation` accessible with `buzzphrase 1 '{i} {v} {a} {a} {n}'`
+
 # 3.1.0
 
 -   split cli (bin) and module (main) into two entrypoints so webpack loaders don't have to write a custom loader or use a shebang loader module :)

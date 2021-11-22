@@ -26,6 +26,7 @@ module.exports = [
   "hardware",
   "hyperconvergence",
   "hyperledgers",
+  "incentivisations",
   "infrastructures",
   "initiatives",
   "interfaces",

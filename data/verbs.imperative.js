@@ -4,6 +4,7 @@ module.exports = [
   "agglomerate",
   "aggregate",
   "amplify",
+  "apply",
   "architect",
   "arrange",
   "balance",
@@ -126,6 +127,7 @@ module.exports = [
   "uphold",
   "upload",
   "utilize",
+  "validate",
   "virtualize",
   "visualize",
 ];
