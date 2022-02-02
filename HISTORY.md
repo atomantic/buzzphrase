@@ -1,3 +1,11 @@
+# 3.1.3
+
+-   linear/collinear/multivariate orthogonality
+
+# 3.1.2
+
+-   grown -> homegrown
+
 # 3.1.1
 
 -   Thanks to the Polkadot whitepaper: `validate applied heterogenous multi-chain incentivisation` accessible with `buzzphrase 1 '{i} {v} {a} {a} {n}'`

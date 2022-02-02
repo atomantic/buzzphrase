@@ -48,6 +48,7 @@ module.exports = [
   "neural-net",
   "normalization",
   "option",
+  "orthogonality",
   "overfitting",
   "paradigm-shift",
   "paradigm",
