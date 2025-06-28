@@ -10,7 +10,7 @@ Since I like to synergize backward overflow for upward mobility (thank you 30 Ro
 
 ```bash
 # ¯\_(ツ)_/¯ don't do this to people you work with
-git commit -m "$(buzzphrase 2)"
+git commit -m "$(npx buzzphrase 2)"
 ```
 
 As of 2.0.0, this module splits up the word groups into verb + adjective + noun and allows combining multiple phrases with a continuation phrase. It also now has logic to make each word mostly unique in the overall phrase. See below when called with 15 joined phrases.
