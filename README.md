@@ -17,24 +17,23 @@ As of 2.0.0, this module splits up the word groups into verb + adjective + noun 
 
 ## Usage
 
-### As a Global Install
-
 Run on the command line, you can specify the number of joining iterations (default 1) and a format (default '{a} {v} {N}'):
 
 ```bash
-  buzzphrase {iterations} {format}
+  npx buzzphrase {iterations} {format}
 ```
 
+example:
+
 ```bash
-⇒ npm install -g buzzphrase
-⇒ buzzphrase
+⇒ npx buzzphrase
 # same as `buzzphrase 1 '{a} {v} {N}'`
 ```
 
 > synthesized transitional alignments
 
 ```bash
-⇒ buzzphrase 1 '{v} {a} {n}'
+⇒ npx buzzphrase 1 '{v} {a} {n}'
 ```
 
 > lobotomized bleeding-edge community
@@ -42,25 +41,25 @@ Run on the command line, you can specify the number of joining iterations (defau
 The format method is also useful for testing new word additions with random counterparts:
 
 ```
-⇒ buzzphrase 1 '{v} {a} consumption'
+⇒ npx buzzphrase 1 '{v} {a} consumption'
 ```
 
 > repurposed organizational consumption
 
 ```bash
-⇒ buzzphrase 2
+⇒ npx buzzphrase 2
 ```
 
 > intermediated 24/7 convergence, leveraging distributed anti-fragile paradigm-shifts
 
 ```bash
-⇒ buzzphrase 3
+⇒ npx buzzphrase 3
 ```
 
 > enhanced incremental initiatives independent of reinvigorated extensible channels, which revolutionizes mesh didactic partnerships
 
 ```bash
-⇒ buzzphrase 15
+⇒ npx buzzphrase 15
 ```
 
 > concealed compatible paradigm-shifts, in contrast to emitted unique convergence, in preparation for serialized innovative abstractions, which revolutionizes e-enabled acoustic singularity, anticipating filtered didactic policies, independent of printed-out best-of-breed hardware, liberating leveraged reciprocal management, enhanced by branded digital pooling on behalf of virtualized zero-downtime #DevOps, which foreshadows upheld extravehicular normalization for facilitated polymorphic markets, which will enable printed multilayered communities, protecting against scanned organizational clusters, forging offloaded 24/7 virtualization, pioneering clicked asynchronous partnerships
@@ -91,7 +90,7 @@ buzzphrase.log({ iterations: 2 });
 
 ### Format Recommendations
 
-#### '{a} {v} {N}' - default
+#### `{a} {v} {N}` (default)
 
 ```
 retrospective digitized relationships
@@ -99,7 +98,7 @@ adaptive accelerated markets
 shallow merged markets
 ```
 
-#### '{a} {v} {n}'
+#### `{a} {v} {n}`
 
 ```
 unique routed projection
@@ -107,7 +106,7 @@ sustainable filed touchpoint
 quantum initialized programming
 ```
 
-#### '{V} {a} {n} {f}'
+#### `{V} {a} {n} {f}`
 
 ```
 incentivizing B2B value-add as code
@@ -115,12 +114,30 @@ popping-up frictionless partnership at scale
 evolving third-generation projection for people
 ```
 
-### '{i} {v} {a} {N}'
+#### `{i} {v} {a} {N}`
 
 ```
 deliver merged immersive channels
 syndicate engineered all-purpose interfaces
 grow architected adversarial mobility
+```
+
+#### `{i} the {n} to {d} {V} the {j}`
+
+```
+incentivize the platform to strategically streamline the low-hanging fruit
+```
+
+#### `{V} {a} {N} is how we {d} {j}`
+
+```
+leveraging scalable methodologies is how we dynamically circle back
+```
+
+#### `Our {j} is to {d} {i} {a} {N}`
+
+```
+Our paradigm shift is to holistically deploy cutting-edge infrastructures
 ```
 
 ### API
@@ -136,8 +153,10 @@ grow architected adversarial mobility
     -   `format`: This is a string template that will replace the following with random words
         -   `{a}` adjective
         -   `{c}` continuation
+        -   `{d}` adverb
         -   `{f}` final (e.g. "for dummies")
         -   `{i}` imperative verb
+        -   `{j}` jargon
         -   `{N}` plural noun
         -   `{n}` singular noun
         -   `{v}` past-tense verb (e.g. initialized)

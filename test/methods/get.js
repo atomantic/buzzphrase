@@ -41,7 +41,7 @@ module.exports = function () {
     // test conjoined phrases
     // as the set grows, tolerate a little more duplication of words
     for (let phraseLength = 2; phraseLength <= 25; phraseLength++) {
-      let acceptable = phraseLength - 14 > 0 ? phraseLength - 14 : 0;
+      let acceptable = phraseLength - 2 > 0 ? phraseLength - 2 : 0;
       let duplicateCount = 0;
       let duplicateWords = [];
       let phrase;
