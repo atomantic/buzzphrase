@@ -17,65 +17,175 @@ As of 2.0.0, this module splits up the word groups into verb + adjective + noun 
 
 ## Usage
 
-Run on the command line, you can specify the number of joining iterations (default 1) and a format (default '{a} {v} {N}'):
+### Command Line
+
+You can run buzzphrase directly from the command line. Specify the number of joining iterations (default 1) and a format (default '{a} {v} {N}').
 
 ```bash
-  npx buzzphrase {iterations} {format}
+npx buzzphrase {iterations} {format}
+# or
+npx buzzphrase {format}
+# e.g.
+npx buzzphrase '{a} {v} {N}'
+# or
+npx buzzphrase 2 '{a} {v} {N}'
 ```
 
-example:
+#### Examples
+
+**Default usage:**
 
 ```bash
-⇒ npx buzzphrase
-# same as `buzzphrase 1 '{a} {v} {N}'`
+npx buzzphrase
+# same as: npx buzzphrase 1 '{a} {v} {N}'
 ```
 
 > synthesized transitional alignments
 
+**Custom format:**
+
 ```bash
-⇒ npx buzzphrase 1 '{v} {a} {n}'
+npx buzzphrase 1 '{v} {a} {n}'
 ```
 
 > lobotomized bleeding-edge community
 
-The format method is also useful for testing new word additions with random counterparts:
+**Test a new word with random counterparts:**
 
-```
-⇒ npx buzzphrase 1 '{v} {a} consumption'
+```bash
+npx buzzphrase 1 '{v} {a} consumption'
 ```
 
 > repurposed organizational consumption
 
+**Multiple joined phrases:**
+
 ```bash
-⇒ npx buzzphrase 2
+npx buzzphrase 2
 ```
 
 > intermediated 24/7 convergence, leveraging distributed anti-fragile paradigm-shifts
 
 ```bash
-⇒ npx buzzphrase 3
+npx buzzphrase 3
 ```
 
 > enhanced incremental initiatives independent of reinvigorated extensible channels, which revolutionizes mesh didactic partnerships
 
 ```bash
-⇒ npx buzzphrase 15
+npx buzzphrase 15
 ```
 
 > concealed compatible paradigm-shifts, in contrast to emitted unique convergence, in preparation for serialized innovative abstractions, which revolutionizes e-enabled acoustic singularity, anticipating filtered didactic policies, independent of printed-out best-of-breed hardware, liberating leveraged reciprocal management, enhanced by branded digital pooling on behalf of virtualized zero-downtime #DevOps, which foreshadows upheld extravehicular normalization for facilitated polymorphic markets, which will enable printed multilayered communities, protecting against scanned organizational clusters, forging offloaded 24/7 virtualization, pioneering clicked asynchronous partnerships
 
-### As a module
+** Other Interesting Formats **
+
+```bash
+npx buzzphrase '{a} {v} {n}'
+```
+
+> unique routed projection
+>
+> sustainable filed touchpoint
+>
+> quantum initialized programming
+
+```bash
+npx buzzphrase '{V} {a} {n} {f}'
+```
+
+> incentivizing B2B value-add as code
+>
+> popping-up frictionless partnership at scale
+>
+> evolving third-generation projection for people
+
+```bash
+npx buzzphrase '{i} {v} {a} {N}'
+```
+
+> deliver merged immersive channels
+>
+> syndicate engineered all-purpose interfaces
+>
+> grow architected adversarial mobility
+
+```bash
+npx buzzphrase '{i} the {n} to {d} {V} the {j}'
+```
+
+> incentivize the platform to strategically streamline the low-hanging fruit
+
+```bash
+npx buzzphrase '{V} {a} {N} is how we {d} {j}'
+```
+
+> leveraging scalable methodologies is how we dynamically circle back
+
+```bash
+npx buzzphrase 'Our {j} is to {d} {i} {a} {N}'
+```
+
+> Our paradigm shift is to holistically deploy cutting-edge infrastructures
+
+```bash
+npx buzzphrase 'To achieve {j}, we must {d} {i} our {a} {N}'
+```
+
+> To achieve a win-win situation, we must completely deploy our best-of-breed solutions.
+
+```bash
+npx buzzphrase "It's not about {j}, it's about {V} {a} {N}"
+```
+
+> It's not about the elephant in the room, it's about empowering proactive methodologies.
+
+```bash
+npx buzzphrase 'Our {a} {n} is the key to unlocking the {j}'
+```
+
+> Our collaborative alignment is the key to unlocking the voice of the customer.
+
+```bash
+npx buzzphrase 'We need to be {d} {a} in our {N}'
+```
+
+> We need to be uniquely collaborative in our partnerships.
+
+```bash
+npx buzzphrase '{d} {V} our {N}'
+```
+
+> Conveniently streamlining our deliverables.
+
+```bash
+npx buzzphrase '{d} {v}'
+```
+
+> Globally synergized.
+
+#### The "Ultimate Synergy" Format
+
+```bash
+npx buzzphrase "It's not about {j}, it's about {d} {V} our {a} {N}, {c} we must {i} the {n} to {d} {V} the {j}, {c} which enables a more {a} and {a} {n}, {c} ensuring our {N} are {d} {v}, all while we {i} our {j} {f}."
+```
+
+> It's not about the long pole in the tent, it's about completely architecting our B2B infrastructures, in preparation for us to streamline the network to competently incentivize our core competency, which enables a more human-centric and frictionless paradigm, ensuring our deliverables are uniquely re-purposed, all while we synergize our heavy lifting for the win.
+
+### As a Module
+
+You can also use buzzphrase as a module in your JavaScript projects:
 
 ```javascript
 import buzzphrase from "buzzphrase";
 // OR
-//const buzzphrase = require("buzzphrase");
+// const buzzphrase = require("buzzphrase");
 
-// get a phrase as a building block
+// Get a phrase as a building block
 console.log("we are building " + buzzphrase.get());
 // -> we are building marshalled retroactive applications
 
-// custom phrase
+// Custom phrase
 console.log(
     buzzphrase.get({
         format: "{i} {a} {n} {f}",
@@ -83,61 +193,9 @@ console.log(
 );
 // -> embrace digital #DevOps for dummies
 
-// log a joined series of 2 phrases to the console
+// Log a joined series of 2 phrases to the console
 buzzphrase.log({ iterations: 2 });
 // -> initialized cognitive paradigm-shifts, in preparation for iterated ubiquitous architectures
-```
-
-### Format Recommendations
-
-#### `{a} {v} {N}` (default)
-
-```
-retrospective digitized relationships
-adaptive accelerated markets
-shallow merged markets
-```
-
-#### `{a} {v} {n}`
-
-```
-unique routed projection
-sustainable filed touchpoint
-quantum initialized programming
-```
-
-#### `{V} {a} {n} {f}`
-
-```
-incentivizing B2B value-add as code
-popping-up frictionless partnership at scale
-evolving third-generation projection for people
-```
-
-#### `{i} {v} {a} {N}`
-
-```
-deliver merged immersive channels
-syndicate engineered all-purpose interfaces
-grow architected adversarial mobility
-```
-
-#### `{i} the {n} to {d} {V} the {j}`
-
-```
-incentivize the platform to strategically streamline the low-hanging fruit
-```
-
-#### `{V} {a} {N} is how we {d} {j}`
-
-```
-leveraging scalable methodologies is how we dynamically circle back
-```
-
-#### `Our {j} is to {d} {i} {a} {N}`
-
-```
-Our paradigm shift is to holistically deploy cutting-edge infrastructures
 ```
 
 ### API
