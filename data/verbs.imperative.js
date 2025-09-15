@@ -26,6 +26,8 @@ module.exports = [
   "design",
   "digitize",
   "disable",
+  "disambiguate",
+  "disburse",
   "disintermediate",
   "disrupt",
   "distribute",
