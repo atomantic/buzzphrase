@@ -57,6 +57,12 @@
   "homepage": "https://github.com/atomantic/buzzphrase#readme",
   "devDependencies": {
     "chai": "^4.3.4",
-    "mocha": "^11.0.0"
+    "mocha": "^11.7.5"
+  },
+  "overrides": {
+    "mocha": {
+      "serialize-javascript": "^7.0.4",
+      "diff": "^8.0.3"
+    }
   }
 }
