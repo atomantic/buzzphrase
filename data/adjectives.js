@@ -38,6 +38,8 @@ module.exports = [
   "frictionless",
   "generative",
   "end-of-life",
+  "ephemeral",
+  "forward-deployed",
   "granular",
   "green-field",
   "heterogeneous",
